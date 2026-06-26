@@ -431,9 +431,12 @@
         })();
     </script>
 
+    <script>document.addEventListener('DOMContentLoaded', () => { document.getElementById('current-year').textContent = new Date().getFullYear(); });</script>
+
     <!-- ── Footer ──────────────────────────────── -->
     <footer>
-        <p>&copy; 2025 Test User. All rights reserved.</p>
+        <p>&copy; <span id="current-year"></span> Test User. All rights reserved.</p>
+        <p>Built with OpenMono Agent</p>
     </footer>
 
 </body>
